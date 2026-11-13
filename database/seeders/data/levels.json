@@ -1,0 +1,3159 @@
+{
+  "level_6": {
+    "id": "level_6",
+    "title": "Comeback",
+    "description": "Terjebak di taman lab misterius! Selesaikan 3 puzzle untuk membuka pintu keluar.",
+    "thumbnail": "",
+    "timeLimit": 720,
+    "characterAvatar": "/avatars/zkayshi2.png",
+    "characterName": "Kayshi",
+    "comicSrc": "/comic/lv6.png",
+    "exitDoorPoints": "0,40.7 9.4,40.5 9.5,67 -0.1,67.2",
+    "sceneTransitionPoints": {
+      "scene_garden_1": "61.6,37.4 61.6,50.4 63.5,54.6 72.4,54.8 74.4,50.6 74.5,37.4 72.1,32.2 64.5,32.4",
+      "scene_garden_2": "82.2,28.1 82.2,71.4 84.1,75.3 94.1,78.1 90.9,73 91.2,27.1 95.5,24.4 94.7,23.1 84.2,24.4"
+    },
+    "dialogMusic": "/audio/dialog_music.mp3",
+    "starThresholds": [
+      480,
+      300,          
+      60
+    ],
+    "music": "/audio/lv6_music.mp3",
+    "hints": [],
+        "sceneHints": {
+      "scene_garden_1": {
+        "char1": [
+          {
+            "text": "Samakan pola urutan bunga dan masukkan ke panel input pattern.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: merah-orange-kuning-hijau-putih-hijau-hijau-pink-biru",
+            "cost": 2
+          }
+        ],
+        "char2": [
+          {
+            "text": "Samakan pola urutan bunga dan masukkan ke panel input pattern.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: merah-orange-kuning-hijau-putih-hijau-hijau-pink-biru",
+            "cost": 2
+          }
+        ],
+        "char3": [
+          {
+            "text": "Samakan pola urutan bunga dan masukkan ke panel input pattern.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: merah-orange-kuning-hijau-putih-hijau-hijau-pink-biru",
+            "cost": 2
+          }
+        ]
+      },
+      "scene_garden_2": {
+        "char1": [
+          {
+            "text": "Baca descriptions monster di poster, dan notes yang ada di kanan.",
+            "cost": 1
+          },
+          {
+            "text": "Sesuaikan berdasarkan jumlah kaki, tangan monster, serta temperature dan oksigen yang cocok.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: 2, 3, 75 F, 27% oxygen",
+            "cost": 2
+          }
+        ],
+        "char2": [
+          {
+            "text": "Baca descriptions monster di poster, dan notes yang ada di kanan.",
+            "cost": 1
+          },
+          {
+            "text": "Sesuaikan berdasarkan jumlah kaki, tangan monster, serta temperature dan oksigen yang cocok.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: 2, 3, 75 F, 27% oxygen",
+            "cost": 2
+          }
+        ],
+        "char3": [
+          {
+            "text": "Baca descriptions monster di poster, dan notes yang ada di kanan.",
+            "cost": 1
+          },
+          {
+            "text": "Sesuaikan berdasarkan jumlah kaki, tangan monster, serta temperature dan oksigen yang cocok.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: 2, 3, 75 F, 27% oxygen",
+            "cost": 2
+          }
+        ]
+      },
+      "scene_garden_3": {
+        "char1": [
+          {
+            "text": "Baca semua notes yang berhubungan dengan table periodic. Isi notes tsb sesuaikan dengan angka dan warna yang ada di table.",
+            "cost": 1
+          },
+          {
+            "text": "Setelah mendapatkan angka melalui notes, lihat di table dan lihat warna dari angka yang didapat (misal angka 35 berwarna biru, berarti bottle pertama berwarna biru).",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: biru-kuning-biru-pink",
+            "cost": 2
+          }
+        ],
+        "char2": [
+          {
+            "text": "Baca semua notes yang berhubungan dengan table periodic. Isi notes tsb sesuaikan dengan angka dan warna yang ada di table.",
+            "cost": 1
+          },
+          {
+            "text": "Setelah mendapatkan angka melalui notes, lihat di table dan lihat warna dari angka yang didapat (misal angka 35 berwarna biru, berarti bottle pertama berwarna biru).",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: biru-kuning-biru-pink",
+            "cost": 2
+          }
+        ],
+        "char3": [
+          {
+            "text": "Baca semua notes yang berhubungan dengan table periodic. Isi notes tsb sesuaikan dengan angka dan warna yang ada di table.",
+            "cost": 1
+          },
+          {
+            "text": "Setelah mendapatkan angka melalui notes, lihat di table dan lihat warna dari angka yang didapat (misal angka 35 berwarna biru, berarti bottle pertama berwarna biru).",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: biru-kuning-biru-pink",
+            "cost": 2
+          }
+        ]
+      }
+    },              
+    "scenes": [
+      {
+        "id": "scene_garden_1",
+        "label": "OutDoor Garden",
+        "backgroundImage": "/backgrounds/garden.png",
+        "hotspots": [
+          {
+            "id": "hs_color_panel",
+            "x": 76,
+            "y": 38,
+            "width": 4,
+            "height": 9,
+            "cursor": "pointer",
+            "image": "/objects/codegarden.png",
+            "action": {
+              "type": "open_puzzle",
+              "puzzleId": "puzzle_color_pattern"
+            }
+          },
+          {
+            "id": "hs_note_g1",
+            "x": 41,
+            "y": 36,
+            "width": 2,
+            "height": 6,
+            "cursor": "zoom-in",
+            "image": "/objects/notenone2.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/digit1.png"
+            }
+          },
+          {
+            "id": "hs_note_g2",
+            "x": 11,
+            "y": 31.6,
+            "width": 5,
+            "height": 9,
+            "cursor": "zoom-in",
+            "image": "/objects/note2.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/digit3.png"
+            }
+          }
+        ]
+      },
+      {
+        "id": "scene_garden_1_open",
+        "label": "OutDoor Garden Open",
+        "backgroundImage": "/backgrounds/garden2.png",
+        "hotspots": [],
+        "hidden": true
+      },
+      {
+        "id": "scene_garden_2",
+        "label": "Experiment Room",
+        "backgroundImage": "/backgrounds/alien.png",
+        "hotspots": [
+          {
+            "id": "hs_param_panel",
+            "x": -2,
+            "y": 55,
+            "width": 29,
+            "height": 38,
+            "cursor": "pointer",
+            "image": "/objects/placeholder.png",
+            "action": {
+              "type": "open_puzzle",
+              "puzzleId": "puzzle_arrow_input"
+            }
+          },
+          {
+            "id": "hs_note_a1",
+            "x": 62,
+            "y": 36,
+            "width": 10,
+            "height": 14,
+            "cursor": "zoom-in",
+            "image": "/objects/notenone2.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/alien.png"
+            }
+          },
+          {
+            "id": "hs_note_a2",
+            "x": 31,
+            "y": 12,
+            "width": 18,
+            "height": 28,
+            "cursor": "zoom-in",
+            "image": "/objects/poster.png",
+            "action": {
+              "type": "open_note",
+              "image": "/objects/poster2.png"
+            }
+          },
+          {
+            "id": "hs_note_a3",
+            "x": 59,
+            "y": 84,
+            "width": 12,
+            "height": 11,
+            "cursor": "zoom-in",
+            "image": "/objects/notenone1.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/digit4.png"
+            }
+          }
+        ]
+      },
+      {
+        "id": "scene_garden_2_open",
+        "label": "Experiment Room Open",
+        "backgroundImage": "/backgrounds/alien2.png",
+        "hotspots": [],
+        "hidden": true
+      },
+      {
+        "id": "scene_garden_3",
+        "label": "Lab Class",
+        "backgroundImage": "/backgrounds/elements.png",
+        "hotspots": [
+          {
+            "id": "hs_chemical_bottles",
+            "x": 30,
+            "y": 44,
+            "width": 26,
+            "height": 36,
+            "cursor": "pointer",
+            "image": "/objects/bottle.png",
+            "action": {
+              "type": "open_puzzle",
+              "puzzleId": "puzzle_chemical_bottles"
+            }
+          },
+          {
+            "id": "hs_note_e1_zoomable",
+            "x": 43,
+            "y": 11,
+            "width": 36,
+            "height": 46,
+            "cursor": "zoom-in",
+            "image": "/objects/table.png",
+            "action": {
+              "type": "open_zoom",
+              "zoomImage": "/objects/table2.png",
+              "label": "ZOOMABLE"
+            }
+          },
+          {
+            "id": "hs_object_katak",
+            "x": 13,
+            "y": 55.7,
+            "width": 15,
+            "height": 18,
+            "cursor": "zoom-in",
+            "image": "/objects/katak.png",
+            "action": {
+              "type": "open_zoom",
+              "zoomImage": "/objects/katak.png",
+              "label": "ZOOMABLE"
+            }
+          },
+          {
+            "id": "hs_note_e3",
+            "x": 27,
+            "y": 74,
+            "width": 5,
+            "height": 8,
+            "cursor": "zoom-in",
+            "image": "/objects/noteslv6.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/clueutama.png"
+            }
+          },
+          {
+            "id": "hs_note_e4",
+            "x": 15,
+            "y": 22,
+            "width": 10,
+            "height": 14,
+            "cursor": "zoom-in",
+            "image": "/objects/noteslv6.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/digit2.png"
+            }
+          },
+          {
+            "id": "hs_note_e5",
+            "x": 82,
+            "y": 75,
+            "width": 5,
+            "height": 8,
+            "cursor": "zoom-in",
+            "image": "/objects/noteslv6.png",
+            "action": {
+              "type": "open_note",
+              "image": "/notes/clue1.png"
+            }
+          },
+          {
+            "id": "hs_door_garden",
+            "x": 40,
+            "y": 10,
+            "width": 20,
+            "height": 72,
+            "cursor": "pointer",
+            "action": {
+              "type": "message",
+              "text": " Pintu terbuka! Kamu berhasil kabur dari The Infinity Paradox!"
+            },
+            "visible": {
+              "requiresSolved": "puzzle_chemical_bottles"
+            }
+          }
+        ]
+      },
+      {
+        "id": "scene_garden_3_open",
+        "label": "Lab Class Open",
+        "backgroundImage": "/backgrounds/elements2.png",
+        "hotspots": [],
+        "hidden": true
+      }
+    ],
+    "items": [],
+    "clues": [],
+    "puzzles": [
+      {
+        "id": "puzzle_color_pattern",
+        "type": "pattern",
+        "title": "Panel Warna Bunga",
+        "answer": "merah-orange-kuning-hijau-putih-hijau-hijau-pink-biru",
+        "patternSize": 9,
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_arrow_input",
+        "type": "combination",
+        "title": "Panel Parameter Lab",
+        "answer": "2-3-75-27",
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_chemical_bottles",
+        "type": "combination",
+        "title": "Botol Kimia",
+        "answer": "biru-kuning-biru-pink",
+        "clueIds": []
+      }
+    ],
+    "treasures": [
+      {
+        "id": "treasure_garden_2",
+        "sceneId": "scene_garden_1",
+        "x": 68,
+        "y": 5,
+        "width": 6,
+        "height": 8,
+        "image": "/treasures/meteor.png",
+        "achievementId": "ach_garden_explorer"
+      },
+      {
+        "id": "treasure_garden_3",
+        "sceneId": "scene_garden_3",
+        "x": 90,
+        "y": 10,
+        "width": 6,
+        "height": 8,
+        "image": "/treasures/web.png",
+        "achievementId": "ach_garden_explorer"
+      }
+    ],
+    "achievements": [
+      {
+        "id": "ach_garden_explorer",
+        "title": "Garden Explorer",
+        "description": "Temukan semua treasure di The Infinity Paradox!",
+        "icon": "/achievements/lab.png",
+        "type": "treasure",
+        "levelId": "level_6"
+      },
+      {
+        "id": "ach_garden_golden",
+        "title": "Golden Brain (Garden)",
+        "description": "Selesaikan The Infinity Paradox dalam waktu kurang dari 5 menit!",
+        "icon": "/achievements/lv6.png",
+        "type": "time",
+        "levelId": "level_6",
+        "isGolden": true
+      },
+      {
+        "id": "ach_garden_complete",
+        "title": "Paradox Solver",
+        "description": "Berhasil kabur dari The Infinity Paradox!",
+        "icon": "/achievements/lv6kayu.png",
+        "type": "time",
+        "levelId": "level_6"
+      },
+      {
+        "id": "ach_garden_nohint",
+        "title": "Garden Explorer",
+        "description": "Temukan semua treasure di The Infinity Paradox!",
+        "icon": "/achievements/hint.png",
+        "type": "time",
+        "levelId": "level_6"
+      },
+      {
+        "id": "ach_scene1_complete",
+        "title": "Pemecah Paradoks I",
+        "description": "Selesaikan Scene 1 di The Infinity Paradox!",
+        "icon": "/achievements/garden.png",
+        "type": "time",
+        "levelId": "level_6"
+      },
+      {
+        "id": "ach_scene2_complete",
+        "title": "Pemecah Paradoks II",
+        "description": "Selesaikan Scene 2 di The Infinity Paradox!",
+        "icon": "/achievements/alien.png",
+        "type": "time",
+        "levelId": "level_6"
+      },
+      {
+        "id": "ach_scene3_complete",
+        "title": "Pemecah Paradoks III",
+        "description": "Selesaikan Scene 3 di The Infinity Paradox!",
+        "icon": "/achievements/bottle.png",
+        "type": "time",
+        "levelId": "level_6"
+      }
+    ],
+    "sceneDialogs": {
+      "scene_garden_2": [
+        {
+          "character": "Kayshii",
+          "text": "Puzzle pertama selesaii....",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi2.png",
+          "isSystem": false
+        },
+        {
+          "character": "Kayshii",
+          "text": "Mari kita lihat apa selanjutnya",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi4.png",
+          "isSystem": false
+        },
+        {
+          "character": "Code Master",
+          "text": "Hehehehe...aku tidak yakin kamu bisa menyelesaikan puzzle ini",
+          "side": "right",
+          "avatarRight": "/avatars/villain2.png",
+          "isSystem": false
+        },
+        {
+          "character": "Code Master",
+          "text": "Aku harap kamu suka membaca HAHAHAHA..",
+          "side": "right",
+          "avatarRight": "/avatars/villain1.png",
+          "isSystem": false
+        }
+      ],
+      "scene_garden_3": [
+        {
+          "character": "Code Master",
+          "text": "WOW..Aku melihat ada yang berhasil memecahkan puzzleku, tapi itu tidak cukup untuk menghentikanku HAHAHAH",
+          "side": "right",
+          "avatarRight": "/avatars/villain2.png",
+          "isSystem": false
+        },
+        {
+          "character": "Code Master",
+          "text": "Selamat Datang di puzzle terakhir,puzzle yang menentukan hidup dan matimu ",
+          "side": "right",
+          "avatarRight": "/avatars/villain2.png",
+          "isSystem": false
+        },
+        {
+          "character": "Code Master",
+          "text": "HAHAHAHAHA..",
+          "side": "right",
+          "avatarRight": "/avatars/villain1.png",
+          "isSystem": false
+        },
+        {
+          "character": "Kayshii",
+          "text": "Ohh...Kimia? Menantangku dibidang yang aku kuasai? Tchh...",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi5.png",
+          "isSystem": false
+        },
+        {
+          "character": "Kayshii",
+          "text": "Ini akan berakhir cepat",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi4.png",
+          "isSystem": false
+        }
+      ]
+    },
+    "comicPages": [
+      {
+        "src": "/comic/comic1.png",
+        "panels": [
+          {
+            "x": 0.5,
+            "y": 1,
+            "width": 57.4,
+            "height": 35.8,
+            "enterFrom": "fade",
+            "sfx": "/audio/sfx/nulis.mp3"
+          },
+          {
+            "x": 58,
+            "y": 1,
+            "width": 41.3,
+            "height": 35.8,
+            "enterFrom": "slide-left",
+            "sfx": "/audio/sfx/angry.mp3"
+          },
+          {
+            "x": 0.5,
+            "y": 37,
+            "width": 99,
+            "height": 31,
+            "enterFrom": "slide-right",
+            "effect": "flash",
+            "sfx": "/audio/sfx/evilaugh.mp3"
+          },
+          {
+            "x": 0.5,
+            "y": 68,
+            "width": 39.7,
+            "height": 31,
+            "enterFrom": "fade",
+            "sfx": "/audio/sfx/angry.mp3"
+          },
+          {
+            "x": 40.4,
+            "y": 68.2,
+            "width": 59,
+            "height": 31,
+            "enterFrom": "slide-right",
+            "effect": "shake"
+          }
+        ]
+      },
+      {
+        "src": "/comic/comic2.png",
+        "panels": [
+          {
+            "x": 0.5,
+            "y": 1,
+            "width": 44,
+            "height": 33.5,
+            "enterFrom": "slide-up",
+            "sfx": "/audio/sfx/finger.mp3"
+          },
+          {
+            "x": 44.72,
+            "y": 1,
+            "width": 54.8,
+            "height": 33.5,
+            "enterFrom": "slide-left"
+          },
+          {
+            "x": 0.5,
+            "y": 34.8,
+            "width": 45.2,
+            "height": 27.3,
+            "enterFrom": "fade"
+          },
+          {
+            "x": 45.9,
+            "y": 34.8,
+            "width": 53.66,
+            "height": 27.3,
+            "enterFrom": "scale",
+            "sfx": "/audio/sfx/pain.mp3"
+          },
+          {
+            "x": 0.5,
+            "y": 62.4,
+            "width": 99,
+            "height": 33,
+            "enterFrom": "fade",
+            "sfx": "/audio/sfx/angry.mp3",
+            "effect": "flash"
+          }
+        ]
+      }
+    ],
+    "introDialog": [],
+    "exitPuzzleId": "puzzle_chemical_bottles"
+  },
+  "level_7": {
+    "id": "level_7",
+    "title": "Broken Paradox",
+    "description": "Kunci Paradoks yang Terpecah",
+    "thumbnail": "",
+    "characterAvatar": "/avatars/katsuragi1.png",
+    "characterName": "Katsuragi",
+    "timeLimit": 3600,
+    "starThresholds": [
+      2100,
+      1200,
+      0
+    ],
+    "music": "/audio/lv7music.mp3",
+    "dialogMusic": "/audio/level7_dialog.mp3",
+    "exitPuzzleId": "puzzle_exit_scene4",
+    "isLevel7": true,
+    "characters": [
+      {
+        "id": "char1",
+        "name": "Kayshi",
+        "avatar": "/avatars/zkayshi6.png",
+        "skill": {
+          "id": "multi_language_reader",
+          "name": "TRANSLATE",
+          "description": "Menerjemahkan teks asing menjadi bahasa Inggris",
+          "icon": "🌐"
+        }
+      },
+      {
+        "id": "char2",
+        "name": "Vania",
+        "avatar": "/avatars/perpus4.png",
+        "skill": {
+          "id": "multi_language_reader",
+          "name": "TRANSLATE",
+          "description": "Menerjemahkan teks asing menjadi bahasa Inggris",
+          "icon": "🌐"
+        }
+      },
+      {
+        "id": "char3",
+        "name": "Katsuragi",
+        "avatar": "/avatars/katsuragi2.png",
+        "skill": {
+          "id": "",
+          "name": "",
+          "description": "",
+          "icon": ""
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "hacking_device",
+        "name": "Hacking Device",
+        "description": "Gunakan hacking device ke panel kode",
+        "icon": "/object/hack.png",
+        "image": "/objects/hack.png"
+      },
+      {
+        "id": "hacking_device_upgraded",
+        "name": "Hacking Device+",
+        "description": "Versi upgrade dari Hacking Device",
+        "icon": "/objects/hackingdevice2.png",
+        "image": "/objects/hackingdevice2.png"
+      },
+      {
+        "id": "item_1",
+        "name": "Hacking Device Part",
+        "description": "Pecahan hacking device",
+        "icon": "/objects/hack1.png",
+        "image": "/objects/hack1.png"
+      },
+      {
+        "id": "item_2",
+        "name": "Hacking Device Part",
+        "description": "Pecahan Hacking device ",
+        "icon": "/objects/hack2.png",
+        "image": "/objects/hack2.png"
+      },
+      {
+        "id": "item_3",
+        "name": "Hacking device Part",
+        "description": "Pecahan Hacking device",
+        "icon": "/objects/hack3.png",
+        "image": "/objects/hack3.png"
+      },
+      {
+        "id": "item_uv_flashlight",
+        "name": "UV Flashlight",
+        "description": "Senter UV untuk melihat hal tersembunyi",
+        "icon": "🔦",
+        "image": "/objects/flashlight.png"
+      },
+      {
+        "id": "item_tape_a",
+        "name": "Tape A",
+        "description": "Kaset data A",
+        "icon": "📼",
+        "image": "/objects/tape_a.png"
+      },
+      {
+        "id": "item_tape_d",
+        "name": "Tape D",
+        "description": "Kaset data D",
+        "icon": "📼",
+        "image": "/objects/tape_d.png"
+      },
+      {
+        "id": "item_tape_e",
+        "name": "Tape E",
+        "description": "Kaset data E",
+        "icon": "📼",
+        "image": "/objects/tape_e.png"
+      },
+      {
+        "id": "item_tape_comic",
+        "name": "Tape Comic",
+        "description": "Kaset data dengan comic",
+        "icon": "📼",
+        "image": "/objects/tape_comic.png"
+      }
+    ],
+    "clues": [],
+    "puzzles": [
+      {
+        "id": "puzzle_dual_lock",
+        "type": "dual",
+        "title": "Dual Lock System",
+        "answer": "8777",
+        "maxDigits": 4,
+        "clueIds": [],
+        "symbolAnswer": [
+          "bintang",
+          "bulat",
+          "segitiga"
+        ]
+      },
+      {
+        "id": "puzzle_scene2",
+        "type": "keypad",
+        "title": "Panel Pintu Tengah",
+        "answer": "52462",
+        "maxDigits": 5,
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_scene3",
+        "type": "keypad",
+        "title": "",
+        "answer": "",
+        "maxDigits": 4,
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_exit_scene4",
+        "type": "keypad",
+        "title": "",
+        "answer": "",
+        "maxDigits": 4, 
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_chest_s4",
+        "type": "computer",
+        "title": "STORAGE LOCK",
+        "answer": "146",
+        "maxDigits": 3,
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_storage",
+        "type": "keypad",
+        "title": "Storage Puzzle",
+        "answer": "",
+        "maxDigits": 4,
+        "clueIds": []
+      },
+      {
+        "id": "puzzle_core_unlock",
+        "type": "keypad",
+        "title": "Core Room Lock",
+        "answer": "",
+        "maxDigits": 4,
+        "clueIds": []
+      }
+    ],
+    "hints": [],
+    "treasures": [
+      {
+        "id": "treasure_lv7_medal",
+        "x": 60,
+        "y": 15,
+        "width": 4,
+        "height": 5,
+        "image": "/treasures/medal.png",
+        "achievementId": "ach_level7_complete",
+        "sceneId": "scene7_3"
+      }
+    ],
+    "sceneHints": {
+      "scene7_1": {
+        "char1": [
+          {
+            "text": "Rakit semua komponen hacking device untuk mengakses panel code di depan pintu penjara.",
+            "cost": 1
+          },
+          {
+            "text": "Gunakan skill Translate saat membuka notes untuk mengetahui urutan pola code.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: bintang - bulat - segitiga",
+            "cost": 2
+          }
+        ],
+        "char2": [
+          {
+            "text": "Ambil flashlight lalu scan sekitar dan selesaikan soal matematika sesuai urutan.",
+            "cost": 1
+          },
+          {
+            "text": "Beritahu temanmu hasil semua soal matematika secara berurutan untuk dimasukkan ke panel input.",
+            "cost": 2
+          },
+          {
+            "text": "Jawaban: 8777",
+            "cost": 2
+          }
+        ]
+      },
+      "scene7_2": {
+        "char1": [
+          {
+            "text": "Ambil semua tape lalu masukkan ke tape reader dan analisa notes, khususnya bagian positions, shift, dan id.",
+            "cost": 1
+          },
+          {
+            "text": "Urutkan hasil id yang sudah didapat berdasarkan alfabet (misal A=5, B=?, C=?).",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: 5 _ _ 6 2",
+            "cost": 1
+          }
+        ],
+        "char2": [
+          {
+            "text": "Gunakan UV flashlight untuk scan sekitar; ada beberapa kotak dengan ID untuk melengkapi kode temanmu.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban: _ 2 4 _ _",
+            "cost": 1
+          }
+        ]
+      },
+      "scene7_3": {
+        "char1": [
+          {
+            "text": "Buka to do list yang ada di computer.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban folder: 6417",
+            "cost": 2
+          },
+          {
+            "text": "Masukkan kode dari sidik jari ke dalam cctv.exe; digit terakhir didapat dari inspect sidik jari Vania di file memory 4.",
+            "cost": 1
+          }
+        ],
+        "char2": [
+          {
+            "text": "Buka folder to do list.",
+            "cost": 1
+          },
+          {
+            "text": "Jawaban folder: 6417",
+            "cost": 2
+          },
+          {
+            "text": "Masukkan kode dari sidik jari ke dalam cctv.exe; digit terakhir didapat dari inspect sidik jari Vania di file memory 4.",
+            "cost": 1
+          }
+        ]
+      },
+      "scene7_4": {
+        "char3": [
+          {
+            "text": "Buka brankas dengan memasukkan code 146, lalu ambil semua alat untuk mengakses perangkat.",
+            "cost": 1
+          },
+          {
+            "text": "Username: Ren_Sinclair, Password: 1574",
+            "cost": 2
+          },
+          {
+            "text": "Samakan frekuensi.",
+            "cost": 1
+          }
+        ]
+      },
+      "scene7_5": {
+        "char1": [
+          {
+            "text": "Selesaikan semua gangguan jika ada; sering-sering gunakan hacking device+.",
+            "cost": 1
+          },
+          {
+            "text": "Mesin Kiri: 341732, Mesin Tengah: 8248, Mesin Kanan: 69412",
+            "cost": 5
+          }
+        ],
+        "char2": [
+          {
+            "text": "Selesaikan semua gangguan jika ada; sering-sering gunakan hacking device+.",
+            "cost": 1
+          },
+          {
+            "text": "Mesin Kiri: 341732, Mesin Tengah: 8248, Mesin Kanan: 69412",
+            "cost": 5
+          }
+        ],
+        "char3": [
+          {
+            "text": "Selesaikan semua gangguan jika ada; sering-sering gunakan hacking device+.",
+            "cost": 1
+          },
+          {
+            "text": "Mesin Kiri: 341732, Mesin Tengah: 8248, Mesin Kanan: 69412",
+            "cost": 5
+          }
+        ]
+      }
+    },
+    "achievements": [
+      {
+        "id": "ach_level7_complete",
+        "title": "Pemecah Paradoks Akhir",
+        "description": "Selesaikan The Broken Paradox!",
+        "icon": "/achievements/lv7complete.png",
+        "type": "time",
+        "levelId": "level_7"
+      },
+      {
+        "id": "ach_level7_golden",
+        "title": "Golden Brain (Paradox)",
+        "description": "Selesaikan The Broken Paradox dengan 3 bintang!",
+        "icon": "/achievements/lv7completegold.png",
+        "type": "time",
+        "levelId": "level_7",
+        "isGolden": true
+      },
+      {
+        "id": "ach_lv7_scene1_complete",
+        "title": "Pemecah Paradoks IV - Scene 1",
+        "description": "Selesaikan Scene 1 di The Broken Paradox!",
+        "icon": "/achievements/lv7scene1.png",
+        "type": "time",
+        "levelId": "level_7"
+      },
+      {
+        "id": "ach_lv7_scene2_complete",
+        "title": "Pemecah Paradoks IV - Scene 2",
+        "description": "Selesaikan Scene 2 di The Broken Paradox!",
+        "icon": "/achievements/lv7scene2.png",
+        "type": "time",
+        "levelId": "level_7"
+      },
+      {
+        "id": "ach_lv7_scene3_complete",
+        "title": "Pemecah Paradoks IV - Scene 3",
+        "description": "Selesaikan Scene 3 di The Broken Paradox!",
+        "icon": "/achievements/lv7scene3.png",
+        "type": "time",
+        "levelId": "level_7"
+      },
+      {
+        "id": "ach_lv7_scene4_complete",
+        "title": "Pemecah Paradoks IV - Scene 4",
+        "description": "Selesaikan Scene 4 di The Broken Paradox!",
+        "icon": "/achievements/lv7scene4.png",
+        "type": "time",
+        "levelId": "level_7"
+      },
+      {
+        "id": "ach_lv7_scene5_complete",
+        "title": "Pemecah Paradoks IV - Scene 5",
+        "description": "Selesaikan Scene 5 di The Broken Paradox!",
+        "icon": "/achievements/lv7scene5.png",
+        "type": "time",
+        "levelId": "level_7"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene7_1",
+        "label": "Sel Penjara",
+        "backgroundImage": "/backgrounds/lv7a.png",
+        "hotspots": [],
+        "sceneComic": {
+          "src": "/comic/scene1.png",
+          "panels": [
+            {
+              "x": 0.2,
+              "y": 1,
+              "width": 27.4,
+              "height": 35.6,
+              "enterFrom": "fade"
+            },
+            {
+              "x": 27.8,
+              "y": 1,
+              "width": 14.3,
+              "height": 35.6,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 42.2,
+              "y": 1,
+              "width": 24.2,
+              "height": 35.6,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 67.2,
+              "y": 1,
+              "width": 32.2,
+              "height": 35.6,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 0.2,
+              "y": 37.2,
+              "width": 26,
+              "height": 31.9,
+              "enterFrom": "slide-left"
+            },
+            {
+              "x": 26.3,
+              "y": 37.2,
+              "width": 42.6,
+              "height": 31.9,
+              "enterFrom": "scale",
+              "effect": "flash"
+            },
+            {
+              "x": 69.4,
+              "y": 37.2,
+              "width": 30.4,
+              "height": 31.9,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 0.2,
+              "y": 69.8,
+              "width": 23.8,
+              "height": 32,
+              "enterFrom": "slide-up"
+            },
+            {
+              "x": 24.3,
+              "y": 69.8,
+              "width": 41.6,
+              "height": 32,
+              "enterFrom": "slide-up"
+            },
+            {
+              "x": 66.2,
+              "y": 69.8,
+              "width": 33.6,
+              "height": 32,
+              "enterFrom": "fade"
+            }
+          ]
+        },
+        "introDialog": [
+          {
+            "character": "Kayshi",
+            "text": "ARRHHH... KEPALAKU SAKIT",
+            "side": "left",
+            "avatarLeftStyle": {
+              "left": -10,
+              "bottom": -80,
+              "height": 700
+            },
+            "avatarLeft": "/avatars/kayshifinal1.png"
+          },
+          {
+            "character": "Kayshi",
+            "text": "Apapun itu aku harus keluar dari sini, pasti ada petunjuk disini",
+            "side": "left",
+            "avatarLeftStyle": {
+              "left": -10,
+              "bottom": -120,
+              "height": 700
+            },
+            "avatarLeft": "/avatars/zkayshi2.png"
+          },
+          {
+            "character": "Vania",
+            "text": "Kita bisa keluar dari sini dengan menginput kode angka dan pola di panel sebelah sana",
+            "side": "right",
+            "avatarRightStyle": {
+              "right": -10,
+              "bottom": -120,
+              "height": 800
+            },
+            "avatarRight": "/avatars/vania1.png"
+          },
+          {
+            "character": "Vania",
+            "text": "Coba periksa sekitarmu juga,dan jangan lupa untuk berpindah karakter",
+            "side": "right",
+            "avatarRightStyle": {
+              "right": -10,
+              "bottom": -120,
+              "height": 800
+            },
+            "avatarRight": "/avatars/vania3.png"
+          }
+        ],
+        "highlightHotspots": [
+          "hs_dual_lock"
+        ],
+        "char1Layer": {
+          "backgroundImage": "/backgrounds/lv7a.png",
+          "hotspots": [
+            {
+              "id": "hs_note_asing",
+              "x": 84,
+              "y": 60,
+              "width": 8,
+              "height": 13,
+              "cursor": "pointer",
+              "image": "/objects/notenone2.png",
+              "action": {
+                "type": "open_note",
+                "image": "/notes/noteasing1.png",
+                "translatedImage": "/notes/noteindo1.png"
+              }
+            },
+            {
+              "id": "hs_note_asing2",
+              "x": 5,
+              "y": 42.6,
+              "width": 8,
+              "height": 13,
+              "cursor": "pointer",
+              "image": "/objects/note2.png",
+              "action": {
+                "type": "open_note",
+                "image": "/notes/noteasing2.png",
+                "translatedImage": "/notes/noteindo2.png"
+              }
+            },
+            {
+              "id": "hs_item_1",
+              "x": 1.6,
+              "y": 29,
+              "width": 3,
+              "height": 10,
+              "cursor": "pointer",
+              "image": "/objects/hack1.png",
+              "action": {
+                "type": "give_item_and_dialog",
+                "itemId": "item_1",
+                "dialogId": "scene7_1_item"
+              },
+              "visible": {
+                "hideAfterUsed": true
+              }
+            },
+            {
+              "id": "hs_item_2",
+              "x": 15,
+              "y": 70,
+              "width": 3,
+              "height": 10,
+              "cursor": "pointer",
+              "image": "/objects/hack2.png",
+              "action": {
+                "type": "give_item_and_dialog",
+                "itemId": "item_2",
+                "dialogId": "scene7_1_item"
+              },
+              "visible": {
+                "hideAfterUsed": true
+              }
+            },
+            {
+              "id": "hs_item_3",
+              "x": 73,
+              "y": 81,
+              "width": 3,
+              "height": 10,
+              "cursor": "pointer",
+              "image": "/objects/hack3.png",
+              "action": {
+                "type": "give_item_and_dialog",
+                "itemId": "item_3",
+                "dialogId": "scene7_1_item"
+              },
+              "visible": {
+                "hideAfterUsed": true
+              }
+            },
+            {
+              "id": "hs_dual_lock",
+              "x": 61.4,
+              "y": 40,
+              "width": 7,
+              "height": 12,
+              "cursor": "pointer",
+              "image": "/objects/dualpuzzle1.png",
+              "action": {
+                "type": "open_puzzle",
+                "puzzleId": "puzzle_dual_lock"
+              }
+            }
+          ]
+        },
+        "char2Layer": {
+          "backgroundImage": "/backgrounds/lv7b.png",
+          "backgroundImageXVision": "/backgrounds/lv7b1.png",
+          "hotspots": [
+            {
+              "id": "hs_item_uv_flashlight",
+              "x": 17,
+              "y": 87,
+              "width": 7,
+              "height": 8,
+              "cursor": "pointer",
+              "image": "/objects/flashlight.png",
+              "action": {
+                "type": "give_item",
+                "itemId": "item_uv_flashlight"
+              },
+              "visible": {
+                "hideAfterUsed": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "scene7_2",
+        "label": "Lorong Penghubung",
+        "backgroundImage": "/backgrounds/lorong.jpg",
+        "hotspots": [],
+        "sceneComic": {
+          "src": "/comic/scene2.png",
+          "panels": [
+            {
+              "x": 0.2,
+              "y": 1,
+              "width": 63.7,
+              "height": 36.3,
+              "enterFrom": "fade"
+            },
+            {
+              "x": 64.3,
+              "y": 1,
+              "width": 35.3,
+              "height": 36.3,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 0.2,
+              "y": 37.6,
+              "width": 12.6,
+              "height": 32,
+              "enterFrom": "slide-left"
+            },
+            {
+              "x": 13.3,
+              "y": 37.6,
+              "width": 28.5,
+              "height": 32,
+              "enterFrom": "scale",
+              "effect": "flash"
+            },
+            {
+              "x": 41.8,
+              "y": 37.6,
+              "width": 15.8,
+              "height": 32,
+              "enterFrom": "slide-right"
+            },
+            {
+              "x": 57.8,
+              "y": 37.6,
+              "width": 15.3,
+              "height": 32,
+              "enterFrom": "slide-left"
+            },
+            {
+              "x": 73,
+              "y": 37.6,
+              "width": 26.8,
+              "height": 32,
+              "enterFrom": "slide-left"
+            },
+            {
+              "x": 0.2,
+              "y": 69.8,
+              "width": 34.8,
+              "height": 32,
+              "enterFrom": "slide-up"
+            },
+            {
+              "x": 35.3,
+              "y": 69.8,
+              "width": 64.6,
+              "height": 32,
+              "enterFrom": "slide-up"
+            }
+          ]
+        },
+        "highlightHotspots": [
+          "hs_keypad_door_c1",
+          "hs_keypad_door_c2"
+        ],
+        "char1Layer": {
+          "backgroundImage": "/backgrounds/lorong.jpg",
+          "hotspots": [
+            {
+              "id": "hs_door_control_c1",
+              "x": 2.3,
+              "y": 28,
+              "width": 26,
+              "height": 55,
+              "cursor": "pointer",
+              "image": "/objects/kiri.png",
+              "action": {
+                "type": "enter_subview",
+                "subView": "control_room"
+              }
+            },
+            {
+              "id": "hs_door_core_locked_c1",
+              "x": 39,
+              "y": 32.4,
+              "width": 20,
+              "height": 40,
+              "cursor": "not-allowed",
+              "image": "/objects/tengah.png",
+              "action": {
+                "type": "message",
+                "text": "🔒 Pintu terkunci. Selesaikan puzzle di Control Room dan Storage."
+              }
+            },
+            {
+              "id": "hs_door_core_open_c1",
+              "x": 39,
+              "y": 22,
+              "width": 20,
+              "height": 60,
+              "cursor": "pointer",
+              "image": "/objects/tengah.png",
+              "action": {
+                "type": "go_to_scene",
+                "sceneId": "scene7_5"
+              },
+              "visible": {
+                "requiresSolved": "puzzle_core_unlock"
+              }
+            },
+            {
+              "id": "hs_door_storage_c1",
+              "x": 72,
+              "y": 30,
+              "width": 26,
+              "height": 55,
+              "cursor": "not-allowed",
+              "image": "/objects/kanan.png",
+              "action": {
+                "type": "message",
+                "text": "🚫 Hanya Vania yang bisa masuk ke Storage Room."
+              }
+            },
+            {
+              "id": "hs_keypad_door_c1",
+              "x": 57,
+              "y": 45,
+              "width": 5,
+              "height": 10,
+              "cursor": "pointer",
+              "image": "/objects/codekoridor.png",
+              "action": {
+                "type": "open_puzzle",
+                "puzzleId": "puzzle_scene2"
+              }
+            }
+          ]
+        },
+        "char1SubViews": {
+          "control_room": {
+            "backgroundImage": "/backgrounds/control2.png",
+            "hotspots": [
+              {
+                "id": "hs_layar_object",
+                "x": 41,
+                "y": 19,
+                "width": 27,
+                "height": 30,
+                "cursor": "pointer",
+                "image": "/objects/layar.png",
+                "action": {
+                  "type": "message",
+                  "text": ""
+                }
+              },
+              {
+                "id": "hs_monitor_tape_input",
+                "x": 41,
+                "y": 19,
+                "width": 27,
+                "height": 30,
+                "cursor": "pointer",
+                "action": {
+                  "type": "open_tape_reader"
+                }
+              },
+              {
+                "id": "hs_tape_a",
+                "x": 13.5,
+                "y": 76.5,
+                "width": 6,
+                "height": 8,
+                "cursor": "pointer",
+                "image": "/objects/tape1.png",
+                "action": {
+                  "type": "give_item",
+                  "itemId": "item_tape_a"
+                },
+                "visible": {
+                  "hideAfterUsed": true
+                }
+              },
+              {
+                "id": "hs_tape_d",
+                "x": 15,
+                "y": 53,
+                "width": 6.8,
+                "height": 7,
+                "cursor": "pointer",
+                "image": "/objects/tape2.png",
+                "action": {
+                  "type": "give_item",
+                  "itemId": "item_tape_d"
+                },
+                "visible": {
+                  "hideAfterUsed": true
+                }
+              },
+              {
+                "id": "hs_tape_e",
+                "x": 75,
+                "y": 77,
+                "width": 8,
+                "height": 10,
+                "cursor": "pointer",
+                "image": "/objects/tape3.png",
+                "action": {
+                  "type": "give_item",
+                  "itemId": "item_tape_e"
+                },
+                "visible": {
+                  "hideAfterUsed": true
+                }
+              },
+              {
+                "id": "hs_note_tabel",
+                "x": 58.3,
+                "y": 66,
+                "width": 8,
+                "height": 13,
+                "cursor": "pointer",
+                "image": "/notes/info2.png",
+                "action": {
+                  "type": "open_note",
+                  "image": "/notes/info2.png",
+                  "translatedImage": "/notes/info1.png"
+                }
+              },
+              {
+                "id": "hs_note_daftar",
+                "x": 15.7,
+                "y": 57.5,
+                "width": 6,
+                "height": 7.5,
+                "cursor": "zoom-in",
+                "image": "/notes/daftarnotes.png",
+                "action": {
+                  "type": "open_note",
+                  "image": "/notes/daftarnotes.png"
+                }
+              },
+              {
+                "id": "hs_tape_comic",
+                "x": 16,
+                "y": 24.7,
+                "width": 6,
+                "height": 8,
+                "cursor": "pointer",
+                "image": "/objects/tape1.png",
+                "action": {
+                  "type": "give_item",
+                  "itemId": "item_tape_comic"
+                },
+                "visible": {
+                  "hideAfterUsed": true
+                }
+              }
+            ]
+          }
+        },
+        "char2Layer": {
+          "backgroundImage": "/backgrounds/lorong.jpg",
+          "backgroundImageXVision": "/backgrounds/lorong.jpg",
+          "hotspots": [
+            {
+              "id": "hs_door_control_c2",
+              "x": 2.3,
+              "y": 28,
+              "width": 26,
+              "height": 55,
+              "cursor": "pointer",
+              "image": "/objects/kiri.png",
+              "action": {
+                "type": "enter_subview",
+                "subView": "control_room"
+              }
+            },
+            {
+              "id": "hs_door_core_locked_c2",
+              "x": 39,
+              "y": 32.4,
+              "width": 20,
+              "height": 40,
+              "cursor": "not-allowed",
+              "image": "/objects/tengah.png",
+              "action": {
+                "type": "message",
+                "text": "🔒 Pintu terkunci. Selesaikan puzzle di Control Room dan Storage."
+              }
+            },
+            {
+              "id": "hs_door_core_open_c2",
+              "x": 39,
+              "y": 22,
+              "width": 20,
+              "height": 60,
+              "image": "/objects/tengah.png",
+              "cursor": "pointer",
+              "action": {
+                "type": "go_to_scene",
+                "sceneId": "scene7_5"
+              },
+              "visible": {
+                "requiresSolved": "puzzle_core_unlock"
+              }
+            },
+            {
+              "id": "hs_door_storage_c2",
+              "x": 72,
+              "y": 30,
+              "width": 26,
+              "height": 55,
+              "cursor": "pointer",
+              "image": "/objects/kanan.png",
+              "action": {
+                "type": "enter_subview",
+                "subView": "storage_room"
+              }
+            },
+            {
+              "id": "hs_keypad_door_c2",
+              "x": 57,
+              "y": 45,
+              "width": 5,
+              "height": 10,
+              "cursor": "pointer",
+              "image": "/objects/codekoridor.png",
+              "action": {
+                "type": "open_puzzle",
+                "puzzleId": "puzzle_scene2"
+              }
+            }
+          ]
+        },
+        "char2SubViews": {
+          "storage_room": {
+            "backgroundImage": "/backgrounds/storage.jpg",
+            "backgroundImageXVision": "/backgrounds/storage2.png",
+            "hotspots": [
+              {
+                "id": "hs_box_c2",
+                "x": 55,
+                "y": 22,
+                "width": 14,
+                "height": 18,
+                "cursor": "zoom-in",
+                "image": "/objects/notenone1.png",
+                "action": {
+                  "type": "open_note",
+                  "image": "/notes/box_c2_xvision.png"
+                },
+                "visible": {
+                  "requiresXVision": true
+                }
+              },
+              {
+                "id": "hs_box_b2",
+                "x": 52,
+                "y": 48,
+                "width": 16,
+                "height": 20,
+                "cursor": "zoom-in",
+                "image": "/objects/notemeja.png",
+                "action": {
+                  "type": "open_note",
+                  "image": "/objects/kiri.png"
+                },
+                "visible": {
+                  "requiresXVision": true
+                }
+              },
+              {
+                "id": "hs_treasure_teddy",
+                "x": 45,
+                "y": 82,
+                "width": 10,
+                "height": 14,
+                "cursor": "pointer",
+                "image": "/treasures/teddy.png",
+                "action": {
+                  "type": "collect_treasure",
+                  "treasureId": "treasure_lv7_teddy"
+                },
+                "visible": {
+                  "hideAfterUsed": true
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "scene7_3",
+        "label": "Pusat Kendali",
+        "backgroundImage": "",
+        "hotspots": [],
+        "highlightHotspots": [
+          "hs_computer_s3"
+        ],
+        "char1Layer": {
+          "backgroundImage": "/backgrounds/kantor.jpg",
+          "hotspots": [
+            {
+              "id": "hs_calender",
+              "x": 32,
+              "y": 15,
+              "width": 15,
+              "height": 28,
+              "cursor": "zoom-in",
+              "image": "/objects/kalender.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/kalender.png",
+                "label": "Kalender",
+                "dialogId": "scene7_3_mark"
+              }
+            },
+            {
+              "id": "hs_computer_s3",
+              "x": 40,
+              "y": 31.6,
+              "width": 15,
+              "height": 20,
+              "cursor": "pointer",
+              "image": "/objects/komputer.png",
+              "action": {
+                "type": "open_desktop_and_dialog",
+                "dialogId": "scene7_3_pc"
+              },
+              "zIndex": 999
+            },
+            {
+              "id": "hs_newspaper",
+              "x": 74,
+              "y": 79,
+              "width": 20,
+              "height": 22,
+              "cursor": "zoom-in",
+              "image": "/objects/koran.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/koran2.png",
+                "label": "Newspaper",
+                "dialogId": "scene7_3_mark"
+              }
+            },
+            {
+              "id": "hs_photo",
+              "x": 1.4,
+              "y": 44,
+              "width": 13,
+              "height": 18,
+              "cursor": "zoom-in",
+              "image": "/objects/foto.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/foto.png",
+                "label": "Katsuragi Takumi",
+                "dialogId": "scene7_3_mark"
+              }
+            }
+          ]
+        },
+        "char2Layer": {
+          "backgroundImage": "/backgrounds/kantor.jpg",
+          "backgroundImageXVision": "/backgrounds/kantor2.jpg",
+          "hotspots": [
+            {
+              "id": "hs_calender2",
+              "x": 32,
+              "y": 15,
+              "width": 15,
+              "height": 28,
+              "cursor": "zoom-in",
+              "image": "/objects/kalender.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/kalender.png",
+                "label": "Kalender",
+                "dialogId": "scene7_3_mark"
+              }
+            },
+            {
+              "id": "hs_computer_s3",
+              "x": 40,
+              "y": 31.6,
+              "width": 15,
+              "height": 20,
+              "cursor": "pointer",
+              "image": "/objects/komputer.png",
+              "action": {
+                "type": "open_desktop_and_dialog",
+                "dialogId": "scene7_3_pc"
+              },
+              "zIndex": 999
+            },
+            {
+              "id": "hs_newspaper",
+              "x": 74,
+              "y": 79,
+              "width": 20,
+              "height": 22,
+              "cursor": "zoom-in",
+              "image": "/objects/koran.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/koran2.png",
+                "label": "Newspaper",
+                "dialogId": "scene7_3_mark"
+              }
+            },
+            {
+              "id": "hs_photo",
+              "x": 1.4,
+              "y": 44,
+              "width": 13,
+              "height": 18,
+              "cursor": "zoom-in",
+              "image": "/objects/foto.png",
+              "action": {
+                "type": "open_zoom_and_dialog",
+                "zoomImage": "/objects/foto.png",
+                "label": "Katsuragi Takumi",
+                "dialogId": "scene7_3_mark"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "scene7_4",
+        "label": "Lab Code Master",
+        "backgroundImage": "/backgrounds/tabung4.png",
+        "hotspots": [],
+        "comicPages": [
+          {
+            "src": "/comic/scene4.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 1,
+                "width": 46.7,
+                "height": 46.5,
+                "enterFrom": "fade"
+              },
+              {
+                "x": 47.3,
+                "y": 1,
+                "width": 52.3,
+                "height": 46.5,
+                "enterFrom": "slide-left"
+              },
+              {
+                "x": 0.5,
+                "y": 47.7,
+                "width": 23,
+                "height": 52,
+                "enterFrom": "slide-right",
+                "effect": "flash"
+              },
+              {
+                "x": 23.7,
+                "y": 47.7,
+                "width": 35.2,
+                "height": 52,
+                "enterFrom": "fade"
+              },
+              {
+                "x": 59,
+                "y": 47.7,
+                "width": 40.6,
+                "height": 19.8,
+                "enterFrom": "slide-right",
+                "effect": "shake"
+              },
+              {
+                "x": 59,
+                "y": 67.8,
+                "width": 40.6,
+                "height": 32,
+                "enterFrom": "slide-right",
+                "effect": "shake"
+              }
+            ]
+          },
+          {
+            "src": "/comic/scene42.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 49.4,
+                "height": 36.2
+              },
+              {
+                "x": 50,
+                "y": 0,
+                "width": 49.9,
+                "height": 36.1
+              },
+              {
+                "x": 0.5,
+                "y": 36.4,
+                "width": 21.9,
+                "height": 29.5
+              },
+              {
+                "x": 22.8,
+                "y": 36.4,
+                "width": 37.2,
+                "height": 29.4
+              },
+              {
+                "x": 60.4,
+                "y": 36.4,
+                "width": 39.9,
+                "height": 29.5
+              },
+              {
+                "x": 0.1,
+                "y": 65.9,
+                "width": 29.8,
+                "height": 33.7
+              },
+              {
+                "x": 30.4,
+                "y": 66.4,
+                "width": 32.4,
+                "height": 33.3
+              },
+              {
+                "x": 63.1,
+                "y": 66.4,
+                "width": 36.6,
+                "height": 33.3
+              }
+            ]
+          }
+        ],
+        "highlightHotspots": [
+          "hs_pod_control"
+        ],
+        "autoSwitchChar": "char3",
+        "char3Layer": {
+          "backgroundImage": "/backgrounds/tabung4.png",
+          "backgroundImageXVision": "/backgrounds/tabung3a.png",
+          "hotspots": [
+            {
+              "id": "hs_pod_control",
+              "x": 15,
+              "y": 53,
+              "width": 70,
+              "height": 50,
+              "cursor": "pointer",
+              "image": "/objects/mesin.png",
+              "action": {
+                "type": "open_pod_control"
+              },
+              "zIndex": 999
+            },
+            {
+              "id": "hs_chest_s4",
+              "x": 86.3,
+              "y": 31.8,
+              "width": 7,
+              "height": 9.5,
+              "cursor": "pointer",
+              "image": "/objects/chest.png",
+              "action": {
+                "type": "open_puzzle",
+                "puzzleId": "puzzle_chest_s4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "id": "scene7_5",
+        "label": "Code Master Core",
+        "backgroundImage": "/backgrounds/scene5.png",
+        "hotspots": [],
+        "char1Layer": {
+          "backgroundImage": "/backgrounds/scene5.png",
+          "hotspots": [
+            {
+              "id": "hs_panel_reactor",
+              "x": 67,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor3.png",
+              "glitchImage": "/objects/reactorkanan.png",
+              "action": {
+                "type": "open_power"
+              }
+            },
+            {
+              "id": "hs_panel_cooling",
+              "x": 41,
+              "y": 69,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor2.png",
+              "glitchImage": "/objects/reactortengah.png",
+              "action": {
+                "type": "open_cooling"
+              }
+            },
+            {
+              "id": "hs_panel_power",
+              "x": 16,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor1.png",
+              "glitchImage": "/objects/reactorkiri.png",
+              "action": {
+                "type": "open_reactor"
+              }
+            }
+          ]
+        },
+        "char2Layer": {
+          "backgroundImage": "/backgrounds/scene5.png",
+          "backgroundImageXVision": "/backgrounds/scene5.png",
+          "hotspots": [
+            {
+              "id": "hs_panel_reactor",
+              "x": 67,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor3.png",
+              "glitchImage": "/objects/reactorkanan.png",
+              "action": {
+                "type": "open_power"
+              }
+            },
+            {
+              "id": "hs_panel_cooling",
+              "x": 41,
+              "y": 69,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor2.png",
+              "glitchImage": "/objects/reactortengah.png",
+              "action": {
+                "type": "open_cooling"
+              }
+            },
+            {
+              "id": "hs_panel_power",
+              "x": 16,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor1.png",
+              "glitchImage": "/objects/reactorkiri.png",
+              "action": {
+                "type": "open_reactor"
+              }
+            }
+          ]
+        },
+        "char3Layer": {
+          "backgroundImage": "/backgrounds/scene5.png",
+          "hotspots": [
+            {
+              "id": "hs_panel_reactor",
+              "x": 67,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor3.png",
+              "glitchImage": "/objects/reactorkanan.png",
+              "action": {
+                "type": "open_power"
+              }
+            },
+            {
+              "id": "hs_panel_cooling",
+              "x": 41,
+              "y": 69,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor2.png",
+              "glitchImage": "/objects/reactortengah.png",
+              "action": {
+                "type": "open_cooling"
+              }
+            },
+            {
+              "id": "hs_panel_power",
+              "x": 16,
+              "y": 64,
+              "width": 20,
+              "height": 30,
+              "cursor": "pointer",
+              "image": "/objects/reactor1.png",
+              "glitchImage": "/objects/reactorkiri.png",
+              "action": {
+                "type": "open_reactor"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "sceneComics": {
+      "scene7_5": {
+        "trigger": "on_enter",
+        "src": "/comic/scene5awalkayshi.png",
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/scene5awalkayshi.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 27.5,
+                "height": 38.5
+              },
+              {
+                "x": 28,
+                "y": 0,
+                "width": 17,
+                "height": 38.5
+              },
+              {
+                "x": 45.2,
+                "y": 0,
+                "width": 16,
+                "height": 38.5
+              },
+              {
+                "x": 61.5,
+                "y": 0,
+                "width": 21.4,
+                "height": 38.5
+              },
+              {
+                "x": 83,
+                "y": 0,
+                "width": 100,
+                "height": 38.5
+              },
+              {
+                "x": 0,
+                "y": 38.9,
+                "width": 60.2,
+                "height": 61.1
+              },
+              {
+                "x": 60.2,
+                "y": 38.9,
+                "width": 39.6,
+                "height": 29.9
+              },
+              {
+                "x": 60.2,
+                "y": 68.8,
+                "width": 39.6,
+                "height": 30
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/scene5awalvania.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 27.5,
+                "height": 38.5
+              },
+              {
+                "x": 28,
+                "y": 0,
+                "width": 17,
+                "height": 38.5
+              },
+              {
+                "x": 45.2,
+                "y": 0,
+                "width": 16,
+                "height": 38.5
+              },
+              {
+                "x": 61.5,
+                "y": 0,
+                "width": 21.4,
+                "height": 38.5
+              },
+              {
+                "x": 83,
+                "y": 0,
+                "width": 100,
+                "height": 38.5
+              },
+              {
+                "x": 0,
+                "y": 38.9,
+                "width": 60.2,
+                "height": 61.1
+              },
+              {
+                "x": 60.2,
+                "y": 38.9,
+                "width": 39.6,
+                "height": 29.9
+              },
+              {
+                "x": 60.2,
+                "y": 68.8,
+                "width": 39.6,
+                "height": 30
+              }
+            ]
+          }
+        },
+        "panels": [
+          {
+            "x": 0.5,
+            "y": 0,
+            "width": 27.5,
+            "height": 38.5
+          },
+          {
+            "x": 28,
+            "y": 0,
+            "width": 17,
+            "height": 38.5
+          },
+          {
+            "x": 45.2,
+            "y": 0,
+            "width": 16,
+            "height": 38.5
+          },
+          {
+            "x": 61.5,
+            "y": 0,
+            "width": 21.4,
+            "height": 38.5
+          },
+          {
+            "x": 83,
+            "y": 0,
+            "width": 100,
+            "height": 38.5
+          },
+          {
+            "x": 0,
+            "y": 38.9,
+            "width": 60.2,
+            "height": 61.1
+          },
+          {
+            "x": 60.2,
+            "y": 38.9,
+            "width": 39.6,
+            "height": 29.9
+          },
+          {
+            "x": 60.2,
+            "y": 68.8,
+            "width": 39.6,
+            "height": 30
+          }
+        ]
+      },
+      "scene7_5_reactor_complete": {
+        "trigger": "on_reactor_complete",
+        "src": "/comic/scene5reactorvania.png",
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/scene5reactorkayshi.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 35.5,
+                "height": 35
+              },
+              {
+                "x": 36,
+                "y": 0,
+                "width": 33.4,
+                "height": 35
+              },
+              {
+                "x": 69.5,
+                "y": 0,
+                "width": 30.2,
+                "height": 35
+              },
+              {
+                "x": 0.5,
+                "y": 35,
+                "width": 27.8,
+                "height": 25.3
+              },
+              {
+                "x": 28.3,
+                "y": 35,
+                "width": 27,
+                "height": 25
+              },
+              {
+                "x": 55.2,
+                "y": 35,
+                "width": 44.5,
+                "height": 25
+              },
+              {
+                "x": 0.5,
+                "y": 60.7,
+                "width": 37,
+                "height": 39.3
+              },
+              {
+                "x": 37.6,
+                "y": 60.7,
+                "width": 62,
+                "height": 39.3
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/scene5reactorvania.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 35.5,
+                "height": 35
+              },
+              {
+                "x": 36,
+                "y": 0,
+                "width": 33.4,
+                "height": 35
+              },
+              {
+                "x": 69.5,
+                "y": 0,
+                "width": 30.2,
+                "height": 35
+              },
+              {
+                "x": 0.5,
+                "y": 35,
+                "width": 27.8,
+                "height": 25.3
+              },
+              {
+                "x": 28.3,
+                "y": 35,
+                "width": 27,
+                "height": 25
+              },
+              {
+                "x": 55.2,
+                "y": 35,
+                "width": 44.5,
+                "height": 25
+              },
+              {
+                "x": 0.5,
+                "y": 60.7,
+                "width": 37,
+                "height": 39.3
+              },
+              {
+                "x": 37.6,
+                "y": 60.7,
+                "width": 62,
+                "height": 39.3
+              }
+            ]
+          }
+        },
+        "panels": [
+          {
+            "x": 0.5,
+            "y": 0,
+            "width": 35.5,
+            "height": 35
+          },
+          {
+            "x": 36,
+            "y": 0,
+            "width": 33.4,
+            "height": 35
+          },
+          {
+            "x": 69.5,
+            "y": 0,
+            "width": 30.2,
+            "height": 35
+          },
+          {
+            "x": 0.5,
+            "y": 35,
+            "width": 27.8,
+            "height": 25.3
+          },
+          {
+            "x": 28.3,
+            "y": 35,
+            "width": 27,
+            "height": 25
+          },
+          {
+            "x": 55.2,
+            "y": 35,
+            "width": 44.5,
+            "height": 25
+          },
+          {
+            "x": 0.5,
+            "y": 60.7,
+            "width": 37,
+            "height": 39.3
+          },
+          {
+            "x": 37.6,
+            "y": 60.7,
+            "width": 62,
+            "height": 39.3
+          }
+        ]
+      },
+      "scene7_5_all_complete": {
+        "trigger": "on_all_complete",
+        "src": "/comic/scene5_all_complete.png",
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/scene5reactorkayshi.png",
+            "panels": [
+              {
+                "x": 0,
+                "y": 0,
+                "width": 100,
+                "height": 100
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/scene5reactorvania.png",
+            "panels": [
+              {
+                "x": 0,
+                "y": 0,
+                "width": 100,
+                "height": 100
+              }
+            ]
+          }
+        },
+        "panels": [
+          {
+            "x": 0,
+            "y": 0,
+            "width": 100,
+            "height": 100
+          }
+        ]
+      },
+      "scene7_3_cctv_complete": {
+        "trigger": "on_cctv_complete",
+        "src": "/comic/scene3akhir.png",
+        "panels": [
+          {
+            "x": 0.2,
+            "y": 1,
+            "width": 30.9,
+            "height": 31.8,
+            "enterFrom": "fade"
+          },
+          {
+            "x": 31.2,
+            "y": 1,
+            "width": 35,
+            "height": 31.7,
+            "enterFrom": "slide-right"
+          },
+          {
+            "x": 66.2,
+            "y": 1,
+            "width": 33.6,
+            "height": 31.7,
+            "enterFrom": "slide-left"
+          },
+          {
+            "x": 0.2,
+            "y": 33.4,
+            "width": 36.2,
+            "height": 28.9,
+            "enterFrom": "slide-left"
+          },
+          {
+            "x": 36.6,
+            "y": 33.4,
+            "width": 19.99,
+            "height": 28.9,
+            "enterFrom": "scale",
+            "effect": "flash"
+          },
+          {
+            "x": 56.8,
+            "y": 33.4,
+            "width": 43.1,
+            "height": 28.9,
+            "enterFrom": "slide-right"
+          },
+          {
+            "x": 0.2,
+            "y": 62.7,
+            "width": 22.9,
+            "height": 37,
+            "enterFrom": "slide-up"
+          },
+          {
+            "x": 23.3,
+            "y": 62.7,
+            "width": 11.7,
+            "height": 37,
+            "enterFrom": "slide-up"
+          },
+          {
+            "x": 35,
+            "y": 62.7,
+            "width": 21.9,
+            "height": 37,
+            "enterFrom": "scale",
+            "effect": "flash"
+          },
+          {
+            "x": 57,
+            "y": 62.7,
+            "width": 42.9,
+            "height": 37,
+            "enterFrom": "scale",
+            "effect": "flash"
+          }
+        ]
+      },
+      "scene7_4_release": {
+        "trigger": "on_pod_release",
+        "src": "/comic/scene4kayshi.png",
+        "panels": [
+          {
+            "x": 0.3,
+            "y": 0,
+            "width": 24.9,
+            "height": 41.4
+          },
+          {
+            "x": 25.5,
+            "y": 0,
+            "width": 27.6,
+            "height": 41.4
+          },
+          {
+            "x": 53.3,
+            "y": 0,
+            "width": 25.2,
+            "height": 41.4
+          },
+          {
+            "x": 78.9,
+            "y": 0,
+            "width": 20.8,
+            "height": 41.4
+          },
+          {
+            "x": 0.3,
+            "y": 42.1,
+            "width": 24.9,
+            "height": 57.5
+          },
+          {
+            "x": 25.5,
+            "y": 42.1,
+            "width": 14.2,
+            "height": 57.5
+          },
+          {
+            "x": 40,
+            "y": 42.1,
+            "width": 16.9,
+            "height": 57.5
+          },
+          {
+            "x": 57.1,
+            "y": 42.1,
+            "width": 24.7,
+            "height": 57.5
+          },
+          {
+            "x": 82,
+            "y": 42.1,
+            "width": 17.7,
+            "height": 57.5
+          }
+        ],
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/scene4kayshi.png",
+            "panels": [
+              {
+                "x": 0.3,
+                "y": 0,
+                "width": 24.9,
+                "height": 41.4
+              },
+              {
+                "x": 25.5,
+                "y": 0,
+                "width": 27.6,
+                "height": 41.4
+              },
+              {
+                "x": 53.3,
+                "y": 0,
+                "width": 25.2,
+                "height": 41.4
+              },
+              {
+                "x": 78.9,
+                "y": 0,
+                "width": 20.8,
+                "height": 41.4
+              },
+              {
+                "x": 0.3,
+                "y": 42.1,
+                "width": 24.9,
+                "height": 57.5
+              },
+              {
+                "x": 25.5,
+                "y": 42.1,
+                "width": 14.2,
+                "height": 57.5
+              },
+              {
+                "x": 40,
+                "y": 42.1,
+                "width": 16.9,
+                "height": 57.5
+              },
+              {
+                "x": 57.1,
+                "y": 42.1,
+                "width": 24.7,
+                "height": 57.5
+              },
+              {
+                "x": 82,
+                "y": 42.1,
+                "width": 17.7,
+                "height": 57.5
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/scene4vania.png",
+            "panels": [
+              {
+                "x": 0.3,
+                "y": 0,
+                "width": 24.9,
+                "height": 41.4
+              },
+              {
+                "x": 25.5,
+                "y": 0,
+                "width": 27.6,
+                "height": 41.4
+              },
+              {
+                "x": 53.3,
+                "y": 0,
+                "width": 25.2,
+                "height": 41.4
+              },
+              {
+                "x": 78.9,
+                "y": 0,
+                "width": 20.8,
+                "height": 41.4
+              },
+              {
+                "x": 0.3,
+                "y": 42.1,
+                "width": 24.9,
+                "height": 57.5
+              },
+              {
+                "x": 25.5,
+                "y": 42.1,
+                "width": 14.2,
+                "height": 57.5
+              },
+              {
+                "x": 40,
+                "y": 42.1,
+                "width": 16.9,
+                "height": 57.5
+              },
+              {
+                "x": 57.1,
+                "y": 42.1,
+                "width": 24.7,
+                "height": 57.5
+              },
+              {
+                "x": 82,
+                "y": 42.1,
+                "width": 17.7,
+                "height": 57.5
+              }
+            ]
+          }
+        }
+      },
+      "scene7_5_final_button": {
+        "trigger": "on_final_button",
+        "src": "/comic/scene5awalkayshi.png",
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/buttonkayshi.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 30.2,
+                "height": 49.9
+              },
+              {
+                "x": 30.8,
+                "y": 0,
+                "width": 38.7,
+                "height": 49.9
+              },
+              {
+                "x": 69.8,
+                "y": 0,
+                "width": 15.2,
+                "height": 49.9
+              },
+              {
+                "x": 85.2,
+                "y": 0,
+                "width": 14.5,
+                "height": 49.9
+              },
+              {
+                "x": 0.5,
+                "y": 49.9,
+                "width": 56.4,
+                "height": 51.1
+              },
+              {
+                "x": 56.8,
+                "y": 49.9,
+                "width": 15.6,
+                "height": 51.1
+              },
+              {
+                "x": 72.4,
+                "y": 49.9,
+                "width": 27.3,
+                "height": 51.1
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/buttonvania.png",
+            "panels": [
+              {
+                "x": 0.5,
+                "y": 0,
+                "width": 30.2,
+                "height": 49.9
+              },
+              {
+                "x": 30.8,
+                "y": 0,
+                "width": 38.7,
+                "height": 49.9
+              },
+              {
+                "x": 69.8,
+                "y": 0,
+                "width": 15.2,
+                "height": 49.9
+              },
+              {
+                "x": 85.2,
+                "y": 0,
+                "width": 14.5,
+                "height": 49.9
+              },
+              {
+                "x": 0.5,
+                "y": 49.9,
+                "width": 56.4,
+                "height": 51.1
+              },
+              {
+                "x": 56.8,
+                "y": 49.9,
+                "width": 15.6,
+                "height": 51.1
+              },
+              {
+                "x": 72.4,
+                "y": 49.9,
+                "width": 27.3,
+                "height": 51.1
+              }
+            ]
+          }
+        },
+        "panels": [
+          {
+            "x": 0.5,
+            "y": 0,
+            "width": 30.2,
+            "height": 49.9
+          },
+          {
+            "x": 30.8,
+            "y": 0,
+            "width": 38.7,
+            "height": 49.9
+          },
+          {
+            "x": 69.8,
+            "y": 0,
+            "width": 15.2,
+            "height": 49.9
+          },
+          {
+            "x": 85.2,
+            "y": 0,
+            "width": 14.5,
+            "height": 49.9
+          },
+          {
+            "x": 0.5,
+            "y": 49.9,
+            "width": 56.4,
+            "height": 51.1
+          },
+          {
+            "x": 56.8,
+            "y": 49.9,
+            "width": 15.6,
+            "height": 51.1
+          },
+          {
+            "x": 72.4,
+            "y": 49.9,
+            "width": 27.3,
+            "height": 51.1
+          }
+        ]
+      },
+      "scene7_5_post_brainmaze": {
+        "trigger": "on_post_brainmaze",
+        "src": "/comic/scene5awalkayshi.png",
+        "srcByReleasedCharacter": {
+          "char1": {
+            "src": "/comic/escapekayshi.png",
+            "panels": [
+              {
+                "x": 0.3,
+                "y": 0,
+                "width": 49.3,
+                "height": 48.5
+              },
+              {
+                "x": 49.9,
+                "y": 0,
+                "width": 49.8,
+                "height": 48.5
+              },
+              {
+                "x": 0.3,
+                "y": 48.9,
+                "width": 99.4,
+                "height": 51.1
+              }
+            ]
+          },
+          "char2": {
+            "src": "/comic/escapevania.png",
+            "panels": [
+              {
+                "x": 0.3,
+                "y": 0,
+                "width": 49.3,
+                "height": 48.5
+              },
+              {
+                "x": 49.9,
+                "y": 0,
+                "width": 49.8,
+                "height": 48.5
+              },
+              {
+                "x": 0.3,
+                "y": 48.9,
+                "width": 99.4,
+                "height": 51.1
+              }
+            ]
+          }
+        },
+        "panels": [
+          {
+            "x": 0.3,
+            "y": 0,
+            "width": 49.3,
+            "height": 48.5
+          },
+          {
+            "x": 49.9,
+            "y": 0,
+            "width": 49.8,
+            "height": 48.5
+          },
+          {
+            "x": 0.3,
+            "y": 48.9,
+            "width": 99.4,
+            "height": 51.1
+          }
+        ]
+      }
+    },
+    "sceneDialogs": {
+      "scene7_1_item": [
+        {
+          "character": "Kayshi",
+          "text": "apa ini? sepertinya ini bagian dari suatu alat yang mungkin berguna,aku akan mencari bagian yang lainnya ",
+          "side": "left",
+          "avatarLeft": "/avatars/kayshihack2.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Hacking Device,aku akan menggunakannya untuk mengakses panel code disana",
+          "side": "left",
+          "avatarLeft": "/avatars/kayshihack.png"
+        }
+      ],
+      "scene7_1_flashlight": [
+        {
+          "character": "Vania",
+          "text": "Senter UV? Mungkin ada sesuatu yang tersembunyi disini.",
+          "side": "right",
+          "avatarRight": "/avatars/vania4.png"
+        }
+      ],
+      "scene7_2_enter": [
+        {
+          "character": "Kayshi",
+          "text": "Lorong dan Pintu ya. Haduhh masih ada yang harus diinput sepertinya untuk bisa membuka pintu yg di ujung sana",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi1.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Pasti petunjuknya ada di salah satu dari kedua pintu ini",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi1.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Bagaimana kalau kita membagi tugas saja,aku ke pintu kiri kamu ke pintu kanan",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi3.png"
+        },
+        {
+          "character": "Vania",
+          "text": "Hmm, ide bagus. Baiklah,aku akan memeriksa pintu kanan untuk mencari petunjuknya",
+          "side": "right",
+          "avatarRight": "/avatars/vania1.png"
+        }
+      ],
+      "scene7_2_code_found": [
+        {
+          "character": "Vania",
+          "text": "Ini dia... potongan kode yang kita cari!",
+          "side": "right",
+          "avatarRight": "/avatars/perpus4.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Bagus! Tapi masih ada yang kurang.",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi4.png"
+        }
+      ],
+      "scene7_3_pc": [
+        {
+          "character": "Kayshi",
+          "text": "PC ini. membutuhkan akses login,Sepertinya ada kaitannya dengan foto yang ada di meja",
+          "side": "left",
+          "avatarLeft": "/avatars/kayshimikir.png"
+        },
+        {
+          "character": "Vania",
+          "text": "PC ini. membutuhkan akses login,Sepertinya ada kaitannya dengan foto yang ada di meja",
+          "side": "right",
+          "avatarRight": "/avatars/vania1.png"
+        }
+      ],
+      "scene7_3_mark": [
+        {
+          "character": "Vania",
+          "text": "Tanda ini... ini pasti petunjuk, mungkin ada tanda lainnya,dan sepertinya berhubungan dengan warna yang ada di PC",
+          "side": "right",
+          "avatarRight": "/avatars/vania3.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Tanda ini... ini pasti petunjuk, mungkin ada tanda lainnya,dan sepertinya berhubungan dengan warna yang ada di PC",
+          "side": "left",
+          "avatarLeft": "/avatars/kayshimikir.png"
+        }
+      ],
+      "scene7_3_folder": [
+        {
+          "character": "Kayshi",
+          "text": "Folder rahasia terbuka. Ini yang kita butuhkan.",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi4.png"
+        }
+      ],
+      "scene7_3_enter": [
+        {
+          "character": "Kayshi",
+          "text": "Kita sudah sampai di ruang kerja. Coba periksa komputer dan petunjuk di sekitarnya.",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi1.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Koran,Foto,Kalender. Pasti ada hubungannya ",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi2.png"
+        },
+        {
+          "character": "Vania",
+          "text": "Aku akan menggunakan kemampuan penglihatan dan terjemahanku untuk mencari tahu petunjuk menyelesaikan mesin ini",
+          "side": "right",
+          "avatarRight": "/avatars/vania3.png"
+        }
+      ],
+      "scene7_4_enter": [
+        {
+          "character": "Katsuragi",
+          "text": "Aku harus membebaskan mereka tapi sayangnya hanya bisa 1 orang saja, namun sebelum itu aku harus menyelaraskan frekuensinya",
+          "side": "left",
+          "avatarLeft": "/avatars/katsuragi1.png"
+        }
+      ],
+      "scene7_5_enter": [
+        {
+          "character": "Katsuragi",
+          "text": "Ini ruang reaktor. Kita harus menonaktifkan reactornya secepat mungkin,tapi sepertinya mesin ini adalah securitynya,aku harus menyelesaikannya",
+          "side": "left",
+          "avatarLeft": "/avatars/katsuragi1.png"
+        },
+        {
+          "character": "Vania",
+          "text": "Aku akan menggunakan kemampuan penglihatan dan terjemahanku untuk mencari tahu petunjuk menyelesaikan mesin ini",
+          "side": "right",
+          "avatarRight": "/avatars/vania3.png"
+        },
+        {
+          "character": "Kayshi",
+          "text": "Aku akan menggunakan kemampuan penglihatan dan terjemahanku untuk mencari tahu petunjuk menyelesaikan mesin ini",
+          "side": "left",
+          "avatarLeft": "/avatars/kayshiup1.png"
+        }
+      ],
+      "scene7_4_machine": [
+        {
+          "character": "Katsuragi",
+          "text": "Mesin ini... Aku harus menyamakan frekuensinya",
+          "side": "left",
+          "avatarLeft": "/avatars/katsuragi1.png"
+        }
+      ],
+      "scene7_4_chest": [
+        {
+          "character": "Katsuragi",
+          "text": "Ini dia yang aku butuhkan, Chip hacking device upgrade, dan barang lainnya untuk bisa meng akses mesin ini",
+          "side": "left",
+          "avatarLeft": "/avatars/katsuragi2.png"
+        }
+      ],
+      "scene7_5_reactor_done": [
+        {
+          "character": "Kayshi",
+          "text": "Satu reaktor selesai! Dua lagi...",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi3.png"
+        },
+        {
+          "character": "Code Master",
+          "text": "Boleh jugaa... lihat apa yang akan terjadi selanjutnya",
+          "side": "right",
+          "avatarRight": "/avatars/villain1.png"
+        },
+        {
+          "character": "Code Master",
+          "text": "Clickk....",
+          "side": "right",
+          "avatarRight": "/avatars/villain1.png"
+        }
+      ],
+      "scene7_5_outro": [
+        {
+          "character": "Kayshi",
+          "text": "Akhirnya shield di reactor sudah hilang aku hanya tingal menekan tombol yang ada disana dan Code master akan berakhir",
+          "side": "left",
+          "avatarLeft": "/avatars/zkayshi6.png"
+        },
+        {
+          "character": "Vania",
+          "text": "Tarik tuas itu. Sekarang!",
+          "side": "right",
+          "avatarRight": "/avatars/perpus4.png"
+        }
+      ]
+    }
+  }
+}
