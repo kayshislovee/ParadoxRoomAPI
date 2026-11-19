@@ -3,7 +3,7 @@
 namespace App\Filament\Admin\Resources;
 
 use App\Filament\Admin\Resources\HotspotResource\Pages;
-use App\Filament\Admin\Resources\Concerns\ValidatesAssetPaths;
+use App\Rules\AssetPath;
 use App\Filament\Forms\Components\ImagePathUpload;
 use App\Models\Hotspot;
 use Filament\Forms;
@@ -15,7 +15,6 @@ use Filament\Tables\Filters;
 
 class HotspotResource extends Resource
 {
-    use ValidatesAssetPaths;
 
     protected static ?string $model = Hotspot::class;
 
@@ -137,8 +136,8 @@ class HotspotResource extends Resource
                             ->directory('hotspots')
                             ->placeholder('/objects/lever.png')
                             ->columnSpanFull()
-                            ->rules([self::assetPathRule()])
-                            ->helperText(self::assetHelperText()),
+                            ->rules([new AssetPath()])
+                            ->helperText('Format: /objects/nama.png (aset frontend) atau achievements/nama.png (upload, otomatis /storage/...).'),
                     ])->columns(4),
 
                 Forms\Components\Section::make('Aksi Saat Diklik')
